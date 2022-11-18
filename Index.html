@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="calc.css">
+
+    <script src="script.js" defer></script>
+
+    <title>Miniräknare</title>
+</head>
+<body class="container">
+    <div class="main" id="calc">
+        <div class="calc-screen grid-col-span-4" id="calc-screen"></div>
+        <button class="calc-btn" onClick="btnCalcEuro();">&rarr;&euro;</button>
+        <button class="calc-btn" onClick="btnCalcDollar();">&rarr;&dollar;</button>
+        <button class="calc-btn" onClick="btnCalcRubel();">&rarr;&#8381;</button>
+        <button class="calc-btn" onClick="btnCalcKr();">&rarr;Kr</button>
+        <button class="calc-btn" onClick="clearAll();">AC</button>
+        <button class="calc-btn" onClick="addDigit('%');">&percnt;</button>
+        <button class="calc-btn" onClick="addDigit('/');">&divide;</button> 
+        <button class="calc-btn" onClick="rotate();" >flip</button> 
+        <button class="calc-btn" onClick="addDigit('7');">7</button>
+        <button class="calc-btn" onClick="addDigit('8');">8</button>
+        <button class="calc-btn" onClick="addDigit('9');">9</button>
+        <button class="calc-btn" onClick="addDigit('*');">&times;</button>
+        <button class="calc-btn" onClick="addDigit('4');">4</button>
+        <button class="calc-btn" onClick="addDigit('5');">5</button>
+        <button class="calc-btn" onClick="addDigit('6');">6</button>
+        <button class="calc-btn" onClick="addDigit('-');">&minus;</button>
+        <button class="calc-btn" onClick="addDigit('1');">1</button>
+        <button class="calc-btn" onClick="addDigit('2');">2</button>
+        <button class="calc-btn" onClick="addDigit('3');">3</button>
+        <button class="calc-btn" onClick="addDigit('+');">&plus;</button>
+        <button class="calc-btn grid-col-span-2" onClick="addDigit('0');">0</button>
+        <button class="calc-btn" onClick="addDigit('.');">.</button>
+        <button class="calc-btn" onClick="calcSum();">=</button>
+    </div>
+</body>
+</html>
